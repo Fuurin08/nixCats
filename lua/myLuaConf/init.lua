@@ -19,5 +19,5 @@ require("lze").load({
 	{ import = "myLuaConf.plugins.treesitter" },
     { import = "myLuaConf.plugins.startuptime" },
     { import = "myLuaConf.plugins.which-key" },
-    -- { import = "myLuaConf.plugins.yazi" },
+    { import = "myLuaConf.plugins.yazi" },
 })
