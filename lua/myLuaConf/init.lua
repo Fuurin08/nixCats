@@ -14,7 +14,7 @@ require("lze").load({
 
     -- lazyload
 	{ import = "myLuaConf.plugins.completion" },
-	-- { import = "myLuaConf.plugins.telescope" },
+    { import = "myLuaConf.plugins.fzf-lua" },
 	{ import = "myLuaConf.plugins.lualine" },
 	{ import = "myLuaConf.plugins.treesitter" },
     { import = "myLuaConf.plugins.startuptime" },

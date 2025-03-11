@@ -25,9 +25,9 @@
 
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
 
-    # neovim-nightly-overlay = {
-    #   url = "github:nix-community/neovim-nightly-overlay";
-    # };
+    #neovim-nightly-overlay = {
+    #  url = "github:nix-community/neovim-nightly-overlay";
+    #};
 
     # see :help nixCats.flake.inputs
     # If you want your plugin to be loaded by the standard overlay,
@@ -121,11 +121,14 @@
               ripgrep
               fzf
               fd
-              curl
+              bat
             ];
             lsp = with pkgs; [
               lua-language-server
               nil
+            ];
+            extra = with pkgs; [
+              yazi
             ];
           };
 
@@ -167,6 +170,7 @@
                 lualine-nvim
                 which-key-nvim
                 vim-startuptime
+                fzf-lua
               ];
               cmp = with pkgs.vimPlugins; [
                 blink-cmp
@@ -175,11 +179,11 @@
                 nvim-treesitter-textobjects
                 nvim-treesitter.withAllGrammars
               ];
-              telescope = with pkgs.vimPlugins; [
-                telescope-nvim
-                telescope-fzf-native-nvim
-                telescope-ui-select-nvim
-              ];
+              # telescope = with pkgs.vimPlugins; [
+              #   telescope-nvim
+              #   telescope-fzf-native-nvim
+              #   telescope-ui-select-nvim
+              # ];
               lsp = with pkgs.vimPlugins; [
                 nvim-lspconfig
               ];
@@ -253,7 +257,7 @@
               # IMPORTANT:
               # your alias may not conflict with your other packages.
               aliases = [ "vim" "nvim" ];
-              # neovim-unwrapped = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
+              #neovim-unwrapped = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
             };
             # and a set of categories that you want
             # (and other information to pass to lua)

@@ -19,6 +19,6 @@ return {
         vim.keymap.set('n', '<leader>/', function() Snacks.terminal.toggle() end, { desc = "Toggle terminal" })
         vim.keymap.set('n', "<leader>..",  function() Snacks.scratch() end, {desc = "Toggle Scratch Buffer"})
         vim.keymap.set('n', "<leader>.s",  function() Snacks.scratch.select() end, {desc = "Select Scratch Buffer"})
-        vim.keymap.set('n', '<leader><leader>', function() Snacks.picker.smart() end, { desc = "Smart Find Files" })
+        -- vim.keymap.set('n', '<leader>ff', function() Snacks.picker.smart() end, { desc = "Smart Find Files" })
     end,
 }
