@@ -179,13 +179,9 @@
                 nvim-treesitter-textobjects
                 nvim-treesitter.withAllGrammars
               ];
-              # telescope = with pkgs.vimPlugins; [
-              #   telescope-nvim
-              #   telescope-fzf-native-nvim
-              #   telescope-ui-select-nvim
-              # ];
               lsp = with pkgs.vimPlugins; [
                 nvim-lspconfig
+                tiny-inline-diagnostic-nvim
               ];
               neonixdev = with pkgs.vimPlugins; [
                 lazydev-nvim

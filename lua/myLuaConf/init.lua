@@ -13,11 +13,12 @@ require("lze").load({
     { import = "myLuaConf.plugins.snacks" },
 
     -- lazyload
-	{ import = "myLuaConf.plugins.completion" },
+    { import = "myLuaConf.plugins.completion" },
     { import = "myLuaConf.plugins.fzf-lua" },
-	{ import = "myLuaConf.plugins.lualine" },
-	{ import = "myLuaConf.plugins.treesitter" },
+    { import = "myLuaConf.plugins.lualine" },
+    { import = "myLuaConf.plugins.treesitter" },
     { import = "myLuaConf.plugins.startuptime" },
     { import = "myLuaConf.plugins.which-key" },
     { import = "myLuaConf.plugins.yazi" },
+    { import = "myLuaConf.plugins.lsp" },
 })
